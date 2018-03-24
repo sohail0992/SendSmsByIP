@@ -1,0 +1,40 @@
+
+By Default all files compiled just run by
+
+java JavaServerGui
+
+
+For server
+
+First of all compile all files by
+
+1.   javac JavaServerGui.java
+
+2.   javac JavaServer.java
+
+3.   javac Threads.java
+
+
+ 
+
+After compiling,  Run the file JavaServerGui.java.
+
+java JavaServerGui
+
+A Gui screen will appear just click on start server button and you will see a message in cmd that "waiting for client to connect",
+It will wait until you connect with the client.
+
+Now set Ip in client app(Andriod App) and click on any button to send instruction to the server. As the server recieve instruction
+gui screen will appear with jtext area with current message plus in cmd area.
+
+
+Default Port Number is : 4444, You can change it by clicking on change Port number After changing it.
+You will be automaticly start listening on that port. If not then click on start server button
+
+Note.
+
+Server has ended message appear then click on stop and exit button and run again by
+
+java JavaServerGui
+
+

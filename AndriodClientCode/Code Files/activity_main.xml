@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.csio.MainActivity"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ipAddress"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small"
+            android:layout_below="@+id/ip"
+            android:hint="@string/portNum"
+            android:inputType="phone"/>
+
+
+        <Button
+            android:id="@+id/ipButton"
+            android:layout_width="@dimen/socket_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/port"
+            android:layout_marginTop="@dimen/small"
+            android:layout_centerInParent="true"
+            android:text="@string/Socket" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="false">
+
+        <Button
+            android:id="@+id/HVAC"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/top"
+            android:layout_marginStart="@dimen/top"
+            android:layout_marginTop="@dimen/topMore"
+            android:drawableTop="@drawable/fan_off"
+            android:duplicateParentState="true"
+            android:onClick="HVACEvent"
+            android:text="@string/fan"
+            android:textColor="@color/textColor"
+
+            />
+
+
+        <Button
+            android:id="@+id/door"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_below="@+id/HVAC"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/top"
+            android:layout_marginStart="@dimen/top"
+            android:layout_marginTop="@dimen/top"
+            android:drawableTop="@drawable/door_close"
+            android:duplicateParentState="true"
+            android:onClick="doorEvent"
+            android:text="@string/door"
+
+            />
+
+        <Button
+            android:id="@+id/alarm"
+            android:layout_width="@dimen/B_width"
+            android:layout_height="@dimen/B_height"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:drawableTop="@drawable/alarm_off"
+            android:duplicateParentState="true"
+            android:onClick="alarmEvent"
+            android:text="@string/alarm"
+            android:textColor="@color/textColor"
+            android:layout_above="@+id/door"
+            android:layout_toRightOf="@+id/HVAC"
+            android:layout_toEndOf="@+id/HVAC" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

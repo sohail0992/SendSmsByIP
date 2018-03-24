@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">So Client</string>
+    <string name="Socket">Set Values</string>
+    <string name="fan">HVAC Off</string>
+    <string name="door">Door Close</string>
+    <string name="alarm">Alarm Off</string>
+    <string name="change_port">Change Port</string>
+    <string name="ipAddress">IP Address</string>
+    <string name="portNum">Default Port: 4444,Click to Change</string>
+</resources>

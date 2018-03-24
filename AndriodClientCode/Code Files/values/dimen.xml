@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="B_width">130sp</dimen>
+
+    <dimen name="B_height">130sp</dimen>
+
+    <dimen name="search_width">200sp</dimen>
+    
+    <dimen name="socket_width">120sp</dimen>
+
+    <dimen name="top">20sp</dimen>
+
+    <dimen name="topMore">30sp</dimen>
+    
+    <dimen name="small">8sp</dimen>
+
+</resources>
